@@ -6,8 +6,6 @@ public interface Graph<E> {
     
     public boolean add(E vertex);
 
-    public void connect(E origin, E target);
-
     public boolean contains(E vertex);
 
     public boolean remove(E vertex);

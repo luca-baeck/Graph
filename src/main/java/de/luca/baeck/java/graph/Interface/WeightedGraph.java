@@ -5,10 +5,14 @@ import java.util.Map;
 
 public interface WeightedGraph<E,T> extends Graph<E> {
 
+    public void connect(E origin, E target, T weight);
+
+    public boolean remove(E origin, E target, T weight);
+
     public List<E> getPath(E origin, E target);
 
     public Map<E, List<E>> getPaths(E origin);
 
-    public void connect(E origin, E target, T weight);
+    public WeightedGraph<E,T> minimalSpanningTree();
     
 }

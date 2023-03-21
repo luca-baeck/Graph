@@ -4,8 +4,8 @@ import de.luca.baeck.java.graph.Edge.AbstractClass.AbstractWeightedEdge;
 
 public class WeightedEdgeClass<E,T> extends AbstractWeightedEdge<E,T> {
 
-    WeightedEdgeClass(E target, T weight) {
-        super(target, weight);
+    public WeightedEdgeClass(E origin, E target, T weight) {
+        super(origin, target, weight);
     }
 
     @Override

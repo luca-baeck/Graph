@@ -4,8 +4,8 @@ import de.luca.baeck.java.graph.Edge.AbstractClass.AbstractEdge;
 
 public class EdgeClass<E> extends AbstractEdge<E> {
 
-    public EdgeClass(E target) {
-        super(target);
+    public EdgeClass(E origin, E target) {
+        super(origin, target);
     }
     
     @Override

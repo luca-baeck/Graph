@@ -6,14 +6,19 @@ public abstract class AbstractWeightedEdge<E,T> extends AbstractEdge<E> implemen
 
     protected T weight;
 
-    protected AbstractWeightedEdge(E target, T weight) {
-        super(target);
+    protected AbstractWeightedEdge(E origin, E target, T weight) {
+        super(origin, target);
         this.weight = weight;
     }
     
     @Override
     public T getWeight() {
         return weight;
+    }
+
+    @Override
+    public String toString() {
+        return "(Origin: " + origin + ", Target: " + target + ", Weight: " + weight + ")";
     }
 
 }

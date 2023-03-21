@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1169px" preserveAspectRatio="none" style="width:2890px;height:1169px;background:#FFFFFF;" version="1.1" viewBox="0 0 2890 1169" width="2890px" zoomAndPan="magnify"><defs/><g><!--MD5=[6c6a2ea544268da07e5e76888ee91805]
+cluster de.luca.baeck.java.graph--><g id="cluster_de.luca.baeck.java.graph"><path d="M13.5,12.1191 L326.5,12.1191 A3.75,3.75 0 0 1 329,14.6191 L336,44.8564 L2880.5,44.8564 A2.5,2.5 0 0 1 2883,47.3564 L2883,1159.6191 A2.5,2.5 0 0 1 2880.5,1162.1191 L13.5,1162.1191 A2.5,2.5 0 0 1 11,1159.6191 L11,14.6191 A2.5,2.5 0 0 1 13.5,12.1191 " fill="#FFFFFF" style="stroke:#000000;stroke-width:1.0;"/><line style="stroke:#000000;stroke-width:1.0;" x1="11" x2="336" y1="44.8564" y2="44.8564"/><text fill="#000000" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="312" x="15" y="36.2373">de.luca.baeck.java.graph</text></g><!--MD5=[706e73df52f3df32f52be1ce9adb217e]
+class Graph--><g id="elem_Graph"><rect codeLine="7" fill="#FFFFFF" height="180.1172" id="Graph" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="318" x="1062" y="57.1191"/><ellipse cx="1189.75" cy="71.1191" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1190.7031,67.7598 L1190.7031,74.416 L1192.4219,74.416 Q1193.0313,74.416 1193.2969,74.6504 Q1193.5625,74.8848 1193.5625,75.2754 Q1193.5625,75.6504 1193.2969,75.8848 Q1193.0313,76.1191 1192.4219,76.1191 L1187.2813,76.1191 Q1186.6719,76.1191 1186.4063,75.8848 Q1186.1406,75.6504 1186.1406,75.2598 Q1186.1406,74.8848 1186.4063,74.6504 Q1186.6719,74.416 1187.2813,74.416 L1189,74.416 L1189,67.7598 L1187.2813,67.7598 Q1186.6719,67.7598 1186.4063,67.5254 Q1186.1406,67.291 1186.1406,66.9004 Q1186.1406,66.5254 1186.4063,66.291 Q1186.6719,66.0566 1187.2813,66.0566 L1192.4219,66.0566 Q1193.0313,66.0566 1193.2969,66.291 Q1193.5625,66.5254 1193.5625,66.9004 Q1193.5625,67.291 1193.2969,67.5254 Q1193.0313,67.7598 1192.4219,67.7598 L1190.7031,67.7598 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="43" x="1207.25" y="76.687">Graph</text><rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="10" x="1373" y="54.1191"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="8" x="1374" y="67.1836">E</text><line style="stroke:#000000;stroke-width:1.0;" x1="1063" x2="1379" y1="85.1191" y2="85.1191"/><line style="stroke:#000000;stroke-width:1.0;" x1="1063" x2="1379" y1="93.1191" y2="93.1191"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="185" x="1068" y="111.1943">+add(vertex: E) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="224" x="1068" y="128.209">+contains(vertex : E) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="218" x="1068" y="145.2236">+remove(vertex : E) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="84" x="1068" y="162.2383">+size() : int</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="153" x="1068" y="179.2529">+isEmpty() : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="306" x="1068" y="196.2676">+subgraph(vertices : List&lt;E&gt;) : Graph&lt;E&gt;</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="182" x="1068" y="213.2822">+isConnected() : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="148" x="1068" y="230.2969">+isCyclic() : boolean</text></g><!--MD5=[04a16760e77cfafe607cce891c11944a]
+class UnweightedGraph--><g id="elem_UnweightedGraph"><rect codeLine="20" fill="#FFFFFF" height="78.0293" id="UnweightedGraph" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="305" x="768.5" y="305.6191"/><ellipse cx="848.25" cy="319.6191" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M849.2031,316.2598 L849.2031,322.916 L850.9219,322.916 Q851.5313,322.916 851.7969,323.1504 Q852.0625,323.3848 852.0625,323.7754 Q852.0625,324.1504 851.7969,324.3848 Q851.5313,324.6191 850.9219,324.6191 L845.7813,324.6191 Q845.1719,324.6191 844.9063,324.3848 Q844.6406,324.1504 844.6406,323.7598 Q844.6406,323.3848 844.9063,323.1504 Q845.1719,322.916 845.7813,322.916 L847.5,322.916 L847.5,316.2598 L845.7813,316.2598 Q845.1719,316.2598 844.9063,316.0254 Q844.6406,315.791 844.6406,315.4004 Q844.6406,315.0254 844.9063,314.791 Q845.1719,314.5566 845.7813,314.5566 L850.9219,314.5566 Q851.5313,314.5566 851.7969,314.791 Q852.0625,315.0254 852.0625,315.4004 Q852.0625,315.791 851.7969,316.0254 Q851.5313,316.2598 850.9219,316.2598 L849.2031,316.2598 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="126" x="865.75" y="325.187">UnweightedGraph</text><rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="10" x="1066.5" y="302.6191"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="8" x="1067.5" y="315.6836">E</text><line style="stroke:#000000;stroke-width:1.0;" x1="769.5" x2="1072.5" y1="333.6191" y2="333.6191"/><line style="stroke:#000000;stroke-width:1.0;" x1="769.5" x2="1072.5" y1="341.6191" y2="341.6191"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="224" x="774.5" y="359.6943">+connect(origin : E, target : E)</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="293" x="774.5" y="376.709">+remove(origin : E, target : E) : boolean</text></g><!--MD5=[76a70ac1c313f958f992f8d55f595dd3]
+class WeightedGraph--><g id="elem_WeightedGraph"><rect codeLine="27" fill="#FFFFFF" height="95.0439" id="WeightedGraph" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="318" x="1564" y="297.1191"/><ellipse cx="1652.75" cy="311.1191" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1653.7031,307.7598 L1653.7031,314.416 L1655.4219,314.416 Q1656.0313,314.416 1656.2969,314.6504 Q1656.5625,314.8848 1656.5625,315.2754 Q1656.5625,315.6504 1656.2969,315.8848 Q1656.0313,316.1191 1655.4219,316.1191 L1650.2813,316.1191 Q1649.6719,316.1191 1649.4063,315.8848 Q1649.1406,315.6504 1649.1406,315.2598 Q1649.1406,314.8848 1649.4063,314.6504 Q1649.6719,314.416 1650.2813,314.416 L1652,314.416 L1652,307.7598 L1650.2813,307.7598 Q1649.6719,307.7598 1649.4063,307.5254 Q1649.1406,307.291 1649.1406,306.9004 Q1649.1406,306.5254 1649.4063,306.291 Q1649.6719,306.0566 1650.2813,306.0566 L1655.4219,306.0566 Q1656.0313,306.0566 1656.2969,306.291 Q1656.5625,306.5254 1656.5625,306.9004 Q1656.5625,307.291 1656.2969,307.5254 Q1656.0313,307.7598 1655.4219,307.7598 L1653.7031,307.7598 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="110" x="1670.25" y="316.687">WeightedGraph</text><rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="21" x="1864" y="294.1191"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="1865" y="307.1836">E,T</text><line style="stroke:#000000;stroke-width:1.0;" x1="1565" x2="1881" y1="325.1191" y2="325.1191"/><line style="stroke:#000000;stroke-width:1.0;" x1="1565" x2="1881" y1="333.1191" y2="333.1191"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="306" x="1570" y="351.1943">+connect(origin : E, target : E, weight : T)</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="292" x="1570" y="368.209">+getPaths(origin : E) : Map&lt;E, List&lt;E&gt;&gt;</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="293" x="1570" y="385.2236">+getPath(origin : E, target : E) : List&lt;E&gt;</text></g><!--MD5=[11e50ae4be66a9e7c9763f32843adb7a]
+class AbstractWeightedGraph--><g id="elem_AbstractWeightedGraph"><rect codeLine="35" fill="#FFFFFF" height="350.2637" id="AbstractWeightedGraph" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="525" x="1753.5" y="452.1191"/><ellipse cx="1915.75" cy="466.1191" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1917.9375,467.8848 L1913.7969,467.8848 L1913.375,468.916 L1913.7969,468.916 Q1914.4063,468.916 1914.6719,469.1504 Q1914.9375,469.3848 1914.9375,469.7754 Q1914.9375,470.1504 1914.6719,470.3848 Q1914.4063,470.6191 1913.7969,470.6191 L1911.5,470.6191 Q1910.8906,470.6191 1910.6406,470.3848 Q1910.375,470.1504 1910.375,469.7598 Q1910.375,469.3848 1910.6563,469.1504 Q1910.9219,468.9004 1911.5469,468.916 L1914.2188,462.2598 L1913.1094,462.2598 Q1912.5,462.2598 1912.2344,462.0254 Q1911.9688,461.791 1911.9688,461.4004 Q1911.9688,461.0254 1912.2344,460.791 Q1912.5,460.5566 1913.1094,460.5566 L1916.7813,460.5566 L1920.1719,468.916 Q1920.7656,468.916 1920.9531,469.0566 Q1921.3438,469.3223 1921.3438,469.7754 Q1921.3438,470.1504 1921.0781,470.3848 Q1920.8281,470.6191 1920.2188,470.6191 L1917.9219,470.6191 Q1917.3125,470.6191 1917.0469,470.3848 Q1916.7813,470.1504 1916.7813,469.7598 Q1916.7813,469.3848 1917.0469,469.1504 Q1917.3125,468.916 1917.9219,468.916 L1918.3438,468.916 L1917.9375,467.8848 Z M1917.2188,466.1816 L1915.8594,462.8066 L1914.4844,466.1816 L1917.2188,466.1816 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="170" x="1933.25" y="471.687">AbstractWeightedGraph</text><rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="21" x="2260.5" y="449.1191"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="2261.5" y="462.1836">E,T</text><line style="stroke:#000000;stroke-width:1.0;" x1="1754.5" x2="2277.5" y1="480.1191" y2="480.1191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="331" x="1759.5" y="498.1943">#edges : Map&lt;E, Set&lt;WeightedEdge&lt;E,T&gt;&gt;&gt;</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="193" x="1759.5" y="515.209">-visited : Map&lt;E, Boolean&gt;</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="233" x="1759.5" y="532.2236">-beingVisited : Map&lt;E, Boolean&gt;</text><line style="stroke:#000000;stroke-width:1.0;" x1="1754.5" x2="2277.5" y1="539.1631" y2="539.1631"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="193" x="1759.5" y="557.2383">#AbstractWeightedGraph()</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="513" x="1759.5" y="574.2529">#AbstractWeightedGraph(edges : Map&lt;E, Set&lt;WeightedEdge&lt;E,T&gt;&gt;&gt;)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="265" x="1759.5" y="591.2676">-link(origin : E, target : E, weight : T)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="185" x="1759.5" y="608.2822">+add(vertex: E) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="223" x="1759.5" y="625.2969">+contains(vertex : E) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="404" x="1759.5" y="642.3115">#removeEdge(origin : E, target : E, weight : T) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="216" x="1759.5" y="659.3262">+remove(vertex : E) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="84" x="1759.5" y="676.3408">+size() : int</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="150" x="1759.5" y="693.3555">+isEmpty() : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="180" x="1759.5" y="710.3701">+isConnected() : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="143" x="1759.5" y="727.3848">+isCyclic() : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="298" x="1759.5" y="744.3994">-isCyclic(origin : E, previous : E) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="291" x="1759.5" y="761.4141">+getPath(origin : E, target : E) : List&lt;E&gt;</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="290" x="1759.5" y="778.4287">+getPaths(origin : E) : Map&lt;E, List&lt;E&gt;&gt;</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="140" x="1759.5" y="795.4434">+toString() : String</text></g><!--MD5=[1533ce517f4cca740928b9de8452cad1]
+class AbstractUnweightedGraph--><g id="elem_AbstractUnweightedGraph"><rect codeLine="59" fill="#FFFFFF" height="316.2344" id="AbstractUnweightedGraph" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="459" x="612.5" y="469.1191"/><ellipse cx="739.25" cy="483.1191" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M741.4375,484.8848 L737.2969,484.8848 L736.875,485.916 L737.2969,485.916 Q737.9063,485.916 738.1719,486.1504 Q738.4375,486.3848 738.4375,486.7754 Q738.4375,487.1504 738.1719,487.3848 Q737.9063,487.6191 737.2969,487.6191 L735,487.6191 Q734.3906,487.6191 734.1406,487.3848 Q733.875,487.1504 733.875,486.7598 Q733.875,486.3848 734.1563,486.1504 Q734.4219,485.9004 735.0469,485.916 L737.7188,479.2598 L736.6094,479.2598 Q736,479.2598 735.7344,479.0254 Q735.4688,478.791 735.4688,478.4004 Q735.4688,478.0254 735.7344,477.791 Q736,477.5566 736.6094,477.5566 L740.2813,477.5566 L743.6719,485.916 Q744.2656,485.916 744.4531,486.0566 Q744.8438,486.3223 744.8438,486.7754 Q744.8438,487.1504 744.5781,487.3848 Q744.3281,487.6191 743.7188,487.6191 L741.4219,487.6191 Q740.8125,487.6191 740.5469,487.3848 Q740.2813,487.1504 740.2813,486.7598 Q740.2813,486.3848 740.5469,486.1504 Q740.8125,485.916 741.4219,485.916 L741.8438,485.916 L741.4375,484.8848 Z M740.7188,483.1816 L739.3594,479.8066 L737.9844,483.1816 L740.7188,483.1816 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="186" x="756.75" y="488.687">AbstractUnweightedGraph</text><rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="10" x="1064.5" y="466.1191"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="8" x="1065.5" y="479.1836">E</text><line style="stroke:#000000;stroke-width:1.0;" x1="613.5" x2="1070.5" y1="497.1191" y2="497.1191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="250" x="618.5" y="515.1943">#edges : Map&lt;E, Set&lt;Edge&lt;E&gt;&gt;&gt;</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="193" x="618.5" y="532.209">-visited : Map&lt;E, Boolean&gt;</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="233" x="618.5" y="549.2236">-beingVisited : Map&lt;E, Boolean&gt;</text><line style="stroke:#000000;stroke-width:1.0;" x1="613.5" x2="1070.5" y1="556.1631" y2="556.1631"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="208" x="618.5" y="574.2383">#AbstractUnweightedGraph()</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="447" x="618.5" y="591.2529">#AbstractUnweightedGraph(edges : Map&lt;E, Set&lt;Edge&lt;E&gt;&gt;&gt;)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="184" x="618.5" y="608.2676">-link(origin : E, target : E)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="185" x="618.5" y="625.2822">+add(vertex: E) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="223" x="618.5" y="642.2969">+contains(vertex : E) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="323" x="618.5" y="659.3115">#removeEdge(origin : E, target : E) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="216" x="618.5" y="676.3262">+remove(vertex : E) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="84" x="618.5" y="693.3408">+size() : int</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="150" x="618.5" y="710.3555">+isEmpty() : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="180" x="618.5" y="727.3701">+isConnected() : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="143" x="618.5" y="744.3848">+isCyclic() : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="298" x="618.5" y="761.3994">-isCyclic(origin : E, previous : E) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="140" x="618.5" y="778.4141">+toString() : String</text></g><!--MD5=[835cbb4a1a090bd69873cbf956a1568b]
+class UnweightedDirectedGraph--><g id="elem_UnweightedDirectedGraph"><rect codeLine="79" fill="#FFFFFF" height="129.0732" id="UnweightedDirectedGraph" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="457" x="27.5" y="870.6191"/><ellipse cx="154.75" cy="884.6191" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M157.5156,880.4941 Q157.6719,880.2754 157.8594,880.166 Q158.0469,880.0566 158.2656,880.0566 Q158.6406,880.0566 158.875,880.3223 Q159.1094,880.5723 159.1094,881.1816 L159.1094,882.6348 Q159.1094,883.2441 158.875,883.5098 Q158.6406,883.7754 158.2656,883.7754 Q157.9219,883.7754 157.7188,883.5723 Q157.5156,883.3848 157.4063,882.8691 Q157.3594,882.5098 157.1719,882.3223 Q156.8438,881.9473 156.2344,881.7285 Q155.625,881.5098 155,881.5098 Q154.2344,881.5098 153.5938,881.8379 Q152.9688,882.166 152.4688,882.916 Q151.9844,883.666 151.9844,884.6973 L151.9844,885.791 Q151.9844,887.0254 152.875,887.8535 Q153.7656,888.666 155.3594,888.666 Q156.2969,888.666 156.9531,888.416 Q157.3438,888.2598 157.7656,887.8223 Q158.0313,887.5566 158.1719,887.4785 Q158.3281,887.4004 158.5313,887.4004 Q158.8594,887.4004 159.1094,887.666 Q159.375,887.916 159.375,888.2598 Q159.375,888.6035 159.0313,889.0098 Q158.5313,889.5879 157.7344,889.916 Q156.6563,890.3691 155.3594,890.3691 Q153.8438,890.3691 152.6406,889.7441 Q151.6563,889.2441 150.9688,888.1816 Q150.2813,887.1035 150.2813,885.8223 L150.2813,884.666 Q150.2813,883.3379 150.8906,882.1973 Q151.5156,881.041 152.6094,880.4316 Q153.7031,879.8066 154.9375,879.8066 Q155.6719,879.8066 156.3125,879.9785 Q156.9688,880.1348 157.5156,880.4941 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="183" x="172.25" y="890.187">UnweightedDirectedGraph</text><rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="10" x="477.5" y="867.6191"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="8" x="478.5" y="880.6836">E</text><line style="stroke:#000000;stroke-width:1.0;" x1="28.5" x2="483.5" y1="898.6191" y2="898.6191"/><line style="stroke:#000000;stroke-width:1.0;" x1="28.5" x2="483.5" y1="906.6191" y2="906.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="206" x="33.5" y="924.6943">+UnweightedDirectedGraph()</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="445" x="33.5" y="941.709">+UnweightedDirectedGraph(edges : Map&lt;E, Set&lt;Edge&lt;E&gt;&gt;&gt;)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="220" x="33.5" y="958.7236">+connect(origin : E, target : E)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="288" x="33.5" y="975.7383">+remove(origin : E, target : E) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="306" x="33.5" y="992.7529">+subgraph(vertices : List&lt;E&gt;) : Graph&lt;E&gt;</text></g><!--MD5=[2ba7dae0fdf2176bcf17f37c2d7b9d41]
+class WeightedDirectedGraph--><g id="elem_WeightedDirectedGraph"><rect codeLine="89" fill="#FFFFFF" height="146.0879" id="WeightedDirectedGraph" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="523" x="1768.5" y="862.1191"/><ellipse cx="1930.75" cy="876.1191" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1933.5156,871.9941 Q1933.6719,871.7754 1933.8594,871.666 Q1934.0469,871.5566 1934.2656,871.5566 Q1934.6406,871.5566 1934.875,871.8223 Q1935.1094,872.0723 1935.1094,872.6816 L1935.1094,874.1348 Q1935.1094,874.7441 1934.875,875.0098 Q1934.6406,875.2754 1934.2656,875.2754 Q1933.9219,875.2754 1933.7188,875.0723 Q1933.5156,874.8848 1933.4063,874.3691 Q1933.3594,874.0098 1933.1719,873.8223 Q1932.8438,873.4473 1932.2344,873.2285 Q1931.625,873.0098 1931,873.0098 Q1930.2344,873.0098 1929.5938,873.3379 Q1928.9688,873.666 1928.4688,874.416 Q1927.9844,875.166 1927.9844,876.1973 L1927.9844,877.291 Q1927.9844,878.5254 1928.875,879.3535 Q1929.7656,880.166 1931.3594,880.166 Q1932.2969,880.166 1932.9531,879.916 Q1933.3438,879.7598 1933.7656,879.3223 Q1934.0313,879.0566 1934.1719,878.9785 Q1934.3281,878.9004 1934.5313,878.9004 Q1934.8594,878.9004 1935.1094,879.166 Q1935.375,879.416 1935.375,879.7598 Q1935.375,880.1035 1935.0313,880.5098 Q1934.5313,881.0879 1933.7344,881.416 Q1932.6563,881.8691 1931.3594,881.8691 Q1929.8438,881.8691 1928.6406,881.2441 Q1927.6563,880.7441 1926.9688,879.6816 Q1926.2813,878.6035 1926.2813,877.3223 L1926.2813,876.166 Q1926.2813,874.8379 1926.8906,873.6973 Q1927.5156,872.541 1928.6094,871.9316 Q1929.7031,871.3066 1930.9375,871.3066 Q1931.6719,871.3066 1932.3125,871.4785 Q1932.9688,871.6348 1933.5156,871.9941 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="168" x="1948.25" y="881.687">WeightedDirectedGraph</text><rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="21" x="2273.5" y="859.1191"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="2274.5" y="872.1836">E,T</text><line style="stroke:#000000;stroke-width:1.0;" x1="1769.5" x2="2290.5" y1="890.1191" y2="890.1191"/><line style="stroke:#000000;stroke-width:1.0;" x1="1769.5" x2="2290.5" y1="898.1191" y2="898.1191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="191" x="1774.5" y="916.1943">+WeightedDirectedGraph()</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="511" x="1774.5" y="933.209">+WeightedDirectedGraph(edges : Map&lt;E, Set&lt;WeightedEdge&lt;E,T&gt;&gt;&gt;)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="301" x="1774.5" y="950.2236">+connect(origin : E, target : E, weight : T)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="364" x="1774.5" y="967.2383">+remove(origin : E, target : E, weight :T) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="306" x="1774.5" y="984.2529">+subgraph(vertices : List&lt;E&gt;) : Graph&lt;E&gt;</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="343" x="1774.5" y="1001.2676">+minimalSpanningTree() : WeightedGraph&lt;E,T&gt;</text></g><!--MD5=[4d13d8c4ad6d7e8de30eaefa732ba95e]
+class UnweightedUndirectedGraph--><g id="elem_UnweightedUndirectedGraph"><rect codeLine="100" fill="#FFFFFF" height="129.0732" id="UnweightedUndirectedGraph" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="474" x="520" y="870.6191"/><ellipse cx="647.25" cy="884.6191" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M650.0156,880.4941 Q650.1719,880.2754 650.3594,880.166 Q650.5469,880.0566 650.7656,880.0566 Q651.1406,880.0566 651.375,880.3223 Q651.6094,880.5723 651.6094,881.1816 L651.6094,882.6348 Q651.6094,883.2441 651.375,883.5098 Q651.1406,883.7754 650.7656,883.7754 Q650.4219,883.7754 650.2188,883.5723 Q650.0156,883.3848 649.9063,882.8691 Q649.8594,882.5098 649.6719,882.3223 Q649.3438,881.9473 648.7344,881.7285 Q648.125,881.5098 647.5,881.5098 Q646.7344,881.5098 646.0938,881.8379 Q645.4688,882.166 644.9688,882.916 Q644.4844,883.666 644.4844,884.6973 L644.4844,885.791 Q644.4844,887.0254 645.375,887.8535 Q646.2656,888.666 647.8594,888.666 Q648.7969,888.666 649.4531,888.416 Q649.8438,888.2598 650.2656,887.8223 Q650.5313,887.5566 650.6719,887.4785 Q650.8281,887.4004 651.0313,887.4004 Q651.3594,887.4004 651.6094,887.666 Q651.875,887.916 651.875,888.2598 Q651.875,888.6035 651.5313,889.0098 Q651.0313,889.5879 650.2344,889.916 Q649.1563,890.3691 647.8594,890.3691 Q646.3438,890.3691 645.1406,889.7441 Q644.1563,889.2441 643.4688,888.1816 Q642.7813,887.1035 642.7813,885.8223 L642.7813,884.666 Q642.7813,883.3379 643.3906,882.1973 Q644.0156,881.041 645.1094,880.4316 Q646.2031,879.8066 647.4375,879.8066 Q648.1719,879.8066 648.8125,879.9785 Q649.4688,880.1348 650.0156,880.4941 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="200" x="664.75" y="890.187">UnweightedUndirectedGraph</text><rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="10" x="987" y="867.6191"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="8" x="988" y="880.6836">E</text><line style="stroke:#000000;stroke-width:1.0;" x1="521" x2="993" y1="898.6191" y2="898.6191"/><line style="stroke:#000000;stroke-width:1.0;" x1="521" x2="993" y1="906.6191" y2="906.6191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="223" x="526" y="924.6943">+UnweightedUndirectedGraph()</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="462" x="526" y="941.709">+UnweightedUndirectedGraph(edges : Map&lt;E, Set&lt;Edge&lt;E&gt;&gt;&gt;)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="220" x="526" y="958.7236">+connect(origin : E, target : E)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="288" x="526" y="975.7383">+remove(origin : E, target : E) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="306" x="526" y="992.7529">+subgraph(vertices : List&lt;E&gt;) : Graph&lt;E&gt;</text></g><!--MD5=[4146235468810df235099e294c7e4a7c]
+class WeightedUndirectedGraph--><g id="elem_WeightedUndirectedGraph"><rect codeLine="110" fill="#FFFFFF" height="146.0879" id="WeightedUndirectedGraph" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="540" x="2327" y="862.1191"/><ellipse cx="2489.25" cy="876.1191" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M2492.0156,871.9941 Q2492.1719,871.7754 2492.3594,871.666 Q2492.5469,871.5566 2492.7656,871.5566 Q2493.1406,871.5566 2493.375,871.8223 Q2493.6094,872.0723 2493.6094,872.6816 L2493.6094,874.1348 Q2493.6094,874.7441 2493.375,875.0098 Q2493.1406,875.2754 2492.7656,875.2754 Q2492.4219,875.2754 2492.2188,875.0723 Q2492.0156,874.8848 2491.9063,874.3691 Q2491.8594,874.0098 2491.6719,873.8223 Q2491.3438,873.4473 2490.7344,873.2285 Q2490.125,873.0098 2489.5,873.0098 Q2488.7344,873.0098 2488.0938,873.3379 Q2487.4688,873.666 2486.9688,874.416 Q2486.4844,875.166 2486.4844,876.1973 L2486.4844,877.291 Q2486.4844,878.5254 2487.375,879.3535 Q2488.2656,880.166 2489.8594,880.166 Q2490.7969,880.166 2491.4531,879.916 Q2491.8438,879.7598 2492.2656,879.3223 Q2492.5313,879.0566 2492.6719,878.9785 Q2492.8281,878.9004 2493.0313,878.9004 Q2493.3594,878.9004 2493.6094,879.166 Q2493.875,879.416 2493.875,879.7598 Q2493.875,880.1035 2493.5313,880.5098 Q2493.0313,881.0879 2492.2344,881.416 Q2491.1563,881.8691 2489.8594,881.8691 Q2488.3438,881.8691 2487.1406,881.2441 Q2486.1563,880.7441 2485.4688,879.6816 Q2484.7813,878.6035 2484.7813,877.3223 L2484.7813,876.166 Q2484.7813,874.8379 2485.3906,873.6973 Q2486.0156,872.541 2487.1094,871.9316 Q2488.2031,871.3066 2489.4375,871.3066 Q2490.1719,871.3066 2490.8125,871.4785 Q2491.4688,871.6348 2492.0156,871.9941 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="185" x="2506.75" y="881.687">WeightedUndirectedGraph</text><rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="21" x="2849" y="859.1191"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="2850" y="872.1836">E,T</text><line style="stroke:#000000;stroke-width:1.0;" x1="2328" x2="2866" y1="890.1191" y2="890.1191"/><line style="stroke:#000000;stroke-width:1.0;" x1="2328" x2="2866" y1="898.1191" y2="898.1191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="208" x="2333" y="916.1943">+WeightedUndirectedGraph()</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="528" x="2333" y="933.209">+WeightedUndirectedGraph(edges : Map&lt;E, Set&lt;WeightedEdge&lt;E,T&gt;&gt;&gt;)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="301" x="2333" y="950.2236">+connect(origin : E, target : E, weight : T)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="364" x="2333" y="967.2383">+remove(origin : E, target : E, weight :T) : boolean</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="306" x="2333" y="984.2529">+subgraph(vertices : List&lt;E&gt;) : Graph&lt;E&gt;</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="343" x="2333" y="1001.2676">+minimalSpanningTree() : WeightedGraph&lt;E,T&gt;</text></g><!--MD5=[2e2f8c8f62c4eb3bc59a59727cfd81a5]
+class Edge--><g id="elem_Edge"><rect codeLine="121" fill="#FFFFFF" height="78.0293" id="Edge" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="129" x="1188.5" y="305.6191"/><ellipse cx="1225.8" cy="319.6191" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1226.7531,316.2598 L1226.7531,322.916 L1228.4719,322.916 Q1229.0813,322.916 1229.3469,323.1504 Q1229.6125,323.3848 1229.6125,323.7754 Q1229.6125,324.1504 1229.3469,324.3848 Q1229.0813,324.6191 1228.4719,324.6191 L1223.3313,324.6191 Q1222.7219,324.6191 1222.4563,324.3848 Q1222.1906,324.1504 1222.1906,323.7598 Q1222.1906,323.3848 1222.4563,323.1504 Q1222.7219,322.916 1223.3313,322.916 L1225.05,322.916 L1225.05,316.2598 L1223.3313,316.2598 Q1222.7219,316.2598 1222.4563,316.0254 Q1222.1906,315.791 1222.1906,315.4004 Q1222.1906,315.0254 1222.4563,314.791 Q1222.7219,314.5566 1223.3313,314.5566 L1228.4719,314.5566 Q1229.0813,314.5566 1229.3469,314.791 Q1229.6125,315.0254 1229.6125,315.4004 Q1229.6125,315.791 1229.3469,316.0254 Q1229.0813,316.2598 1228.4719,316.2598 L1226.7531,316.2598 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="35" x="1243.2" y="325.187">Edge</text><rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="10" x="1310.5" y="302.6191"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="8" x="1311.5" y="315.6836">E</text><line style="stroke:#000000;stroke-width:1.0;" x1="1189.5" x2="1316.5" y1="333.6191" y2="333.6191"/><line style="stroke:#000000;stroke-width:1.0;" x1="1189.5" x2="1316.5" y1="341.6191" y2="341.6191"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="114" x="1194.5" y="359.6943">+getOrigin() : E</text><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="117" x="1194.5" y="376.709">+getTarget() : E</text></g><!--MD5=[dc63791e1da157b958b8db3d416a5273]
+class WeightedEdge--><g id="elem_WeightedEdge"><rect codeLine="128" fill="#FFFFFF" height="61.0146" id="WeightedEdge" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="153" x="1176.5" y="596.6191"/><ellipse cx="1189.5" cy="610.6191" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1190.4531,607.2598 L1190.4531,613.916 L1192.1719,613.916 Q1192.7813,613.916 1193.0469,614.1504 Q1193.3125,614.3848 1193.3125,614.7754 Q1193.3125,615.1504 1193.0469,615.3848 Q1192.7813,615.6191 1192.1719,615.6191 L1187.0313,615.6191 Q1186.4219,615.6191 1186.1563,615.3848 Q1185.8906,615.1504 1185.8906,614.7598 Q1185.8906,614.3848 1186.1563,614.1504 Q1186.4219,613.916 1187.0313,613.916 L1188.75,613.916 L1188.75,607.2598 L1187.0313,607.2598 Q1186.4219,607.2598 1186.1563,607.0254 Q1185.8906,606.791 1185.8906,606.4004 Q1185.8906,606.0254 1186.1563,605.791 Q1186.4219,605.5566 1187.0313,605.5566 L1192.1719,605.5566 Q1192.7813,605.5566 1193.0469,605.791 Q1193.3125,606.0254 1193.3125,606.4004 Q1193.3125,606.791 1193.0469,607.0254 Q1192.7813,607.2598 1192.1719,607.2598 L1190.4531,607.2598 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="102" x="1201.5" y="616.187">WeightedEdge</text><rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="21" x="1311.5" y="593.6191"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="1312.5" y="606.6836">E,T</text><line style="stroke:#000000;stroke-width:1.0;" x1="1177.5" x2="1328.5" y1="624.6191" y2="624.6191"/><line style="stroke:#000000;stroke-width:1.0;" x1="1177.5" x2="1328.5" y1="632.6191" y2="632.6191"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="121" x="1182.5" y="650.6943">+getWeight() : T</text></g><!--MD5=[290b6be765493a7cfb2ed8eef89314c5]
+class AbstractEdge--><g id="elem_AbstractEdge"><rect codeLine="134" fill="#FFFFFF" height="146.0879" id="AbstractEdge" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="272" x="1419" y="554.1191"/><ellipse cx="1497.75" cy="568.1191" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1499.9375,569.8848 L1495.7969,569.8848 L1495.375,570.916 L1495.7969,570.916 Q1496.4063,570.916 1496.6719,571.1504 Q1496.9375,571.3848 1496.9375,571.7754 Q1496.9375,572.1504 1496.6719,572.3848 Q1496.4063,572.6191 1495.7969,572.6191 L1493.5,572.6191 Q1492.8906,572.6191 1492.6406,572.3848 Q1492.375,572.1504 1492.375,571.7598 Q1492.375,571.3848 1492.6563,571.1504 Q1492.9219,570.9004 1493.5469,570.916 L1496.2188,564.2598 L1495.1094,564.2598 Q1494.5,564.2598 1494.2344,564.0254 Q1493.9688,563.791 1493.9688,563.4004 Q1493.9688,563.0254 1494.2344,562.791 Q1494.5,562.5566 1495.1094,562.5566 L1498.7813,562.5566 L1502.1719,570.916 Q1502.7656,570.916 1502.9531,571.0566 Q1503.3438,571.3223 1503.3438,571.7754 Q1503.3438,572.1504 1503.0781,572.3848 Q1502.8281,572.6191 1502.2188,572.6191 L1499.9219,572.6191 Q1499.3125,572.6191 1499.0469,572.3848 Q1498.7813,572.1504 1498.7813,571.7598 Q1498.7813,571.3848 1499.0469,571.1504 Q1499.3125,570.916 1499.9219,570.916 L1500.3438,570.916 L1499.9375,569.8848 Z M1499.2188,568.1816 L1497.8594,564.8066 L1496.4844,568.1816 L1499.2188,568.1816 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="95" x="1515.25" y="573.687">AbstractEdge</text><rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="10" x="1684" y="551.1191"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="8" x="1685" y="564.1836">E</text><line style="stroke:#000000;stroke-width:1.0;" x1="1420" x2="1690" y1="582.1191" y2="582.1191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="75" x="1425" y="600.1943">#origin : E</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="79" x="1425" y="617.209">#target : E</text><line style="stroke:#000000;stroke-width:1.0;" x1="1420" x2="1690" y1="624.1484" y2="624.1484"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="260" x="1425" y="642.2236">#AbstractEdge(origin : E, target : E)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="112" x="1425" y="659.2383">+getOrigin() : E</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="117" x="1425" y="676.2529">+getTarget() : E</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="140" x="1425" y="693.2676">+toString() : String</text></g><!--MD5=[6dacb1e7023b94205847190f1d7b1ffa]
+class AbstractWeightedEdge--><g id="elem_AbstractWeightedEdge"><rect codeLine="146" fill="#FFFFFF" height="112.0586" id="AbstractWeightedEdge" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="420" x="1029" y="879.1191"/><ellipse cx="1142.75" cy="893.1191" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1144.9375,894.8848 L1140.7969,894.8848 L1140.375,895.916 L1140.7969,895.916 Q1141.4063,895.916 1141.6719,896.1504 Q1141.9375,896.3848 1141.9375,896.7754 Q1141.9375,897.1504 1141.6719,897.3848 Q1141.4063,897.6191 1140.7969,897.6191 L1138.5,897.6191 Q1137.8906,897.6191 1137.6406,897.3848 Q1137.375,897.1504 1137.375,896.7598 Q1137.375,896.3848 1137.6563,896.1504 Q1137.9219,895.9004 1138.5469,895.916 L1141.2188,889.2598 L1140.1094,889.2598 Q1139.5,889.2598 1139.2344,889.0254 Q1138.9688,888.791 1138.9688,888.4004 Q1138.9688,888.0254 1139.2344,887.791 Q1139.5,887.5566 1140.1094,887.5566 L1143.7813,887.5566 L1147.1719,895.916 Q1147.7656,895.916 1147.9531,896.0566 Q1148.3438,896.3223 1148.3438,896.7754 Q1148.3438,897.1504 1148.0781,897.3848 Q1147.8281,897.6191 1147.2188,897.6191 L1144.9219,897.6191 Q1144.3125,897.6191 1144.0469,897.3848 Q1143.7813,897.1504 1143.7813,896.7598 Q1143.7813,896.3848 1144.0469,896.1504 Q1144.3125,895.916 1144.9219,895.916 L1145.3438,895.916 L1144.9375,894.8848 Z M1144.2188,893.1816 L1142.8594,889.8066 L1141.4844,893.1816 L1144.2188,893.1816 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="162" x="1160.25" y="898.687">AbstractWeightedEdge</text><rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="21" x="1431" y="876.1191"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="19" x="1432" y="889.1836">E,T</text><line style="stroke:#000000;stroke-width:1.0;" x1="1030" x2="1448" y1="907.1191" y2="907.1191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="82" x="1035" y="925.1943">#weight : T</text><line style="stroke:#000000;stroke-width:1.0;" x1="1030" x2="1448" y1="932.1338" y2="932.1338"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="408" x="1035" y="950.209">#AbstractWeightedEdge(origin : E, target : E, weight : T)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="121" x="1035" y="967.2236">+getWeight() : T</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="140" x="1035" y="984.2383">+toString() : String</text></g><!--MD5=[34659d52b5c97019823d94d8b77c22d0]
+class EdgeClass--><g id="elem_EdgeClass"><rect codeLine="156" fill="#FFFFFF" height="78.0293" id="EdgeClass" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="249" x="1484.5" y="896.1191"/><ellipse cx="1563.25" cy="910.1191" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1566.0156,905.9941 Q1566.1719,905.7754 1566.3594,905.666 Q1566.5469,905.5566 1566.7656,905.5566 Q1567.1406,905.5566 1567.375,905.8223 Q1567.6094,906.0723 1567.6094,906.6816 L1567.6094,908.1348 Q1567.6094,908.7441 1567.375,909.0098 Q1567.1406,909.2754 1566.7656,909.2754 Q1566.4219,909.2754 1566.2188,909.0723 Q1566.0156,908.8848 1565.9063,908.3691 Q1565.8594,908.0098 1565.6719,907.8223 Q1565.3438,907.4473 1564.7344,907.2285 Q1564.125,907.0098 1563.5,907.0098 Q1562.7344,907.0098 1562.0938,907.3379 Q1561.4688,907.666 1560.9688,908.416 Q1560.4844,909.166 1560.4844,910.1973 L1560.4844,911.291 Q1560.4844,912.5254 1561.375,913.3535 Q1562.2656,914.166 1563.8594,914.166 Q1564.7969,914.166 1565.4531,913.916 Q1565.8438,913.7598 1566.2656,913.3223 Q1566.5313,913.0566 1566.6719,912.9785 Q1566.8281,912.9004 1567.0313,912.9004 Q1567.3594,912.9004 1567.6094,913.166 Q1567.875,913.416 1567.875,913.7598 Q1567.875,914.1035 1567.5313,914.5098 Q1567.0313,915.0879 1566.2344,915.416 Q1565.1563,915.8691 1563.8594,915.8691 Q1562.3438,915.8691 1561.1406,915.2441 Q1560.1563,914.7441 1559.4688,913.6816 Q1558.7813,912.6035 1558.7813,911.3223 L1558.7813,910.166 Q1558.7813,908.8379 1559.3906,907.6973 Q1560.0156,906.541 1561.1094,905.9316 Q1562.2031,905.3066 1563.4375,905.3066 Q1564.1719,905.3066 1564.8125,905.4785 Q1565.4688,905.6348 1566.0156,905.9941 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="72" x="1580.75" y="915.687">EdgeClass</text><rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="10" x="1726.5" y="893.1191"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="8" x="1727.5" y="906.1836">E</text><line style="stroke:#000000;stroke-width:1.0;" x1="1485.5" x2="1732.5" y1="924.1191" y2="924.1191"/><line style="stroke:#000000;stroke-width:1.0;" x1="1485.5" x2="1732.5" y1="932.1191" y2="932.1191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="237" x="1490.5" y="950.1943">+EdgeClass(origin : E, target : E)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="224" x="1490.5" y="967.209">+equals(obj : Object) : boolean</text></g><!--MD5=[a10a07d7e67a17cd1a5035d6086fa6bc]
+class WeightedEdgeClass--><g id="elem_WeightedEdgeClass"><rect codeLine="163" fill="#FFFFFF" height="78.0293" id="WeightedEdgeClass" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="397" x="1040.5" y="1068.1191"/><ellipse cx="1159.75" cy="1082.1191" fill="#FFFFFF" rx="9" ry="9" style="stroke:#000000;stroke-width:1.0;"/><path d="M1162.5156,1077.9941 Q1162.6719,1077.7754 1162.8594,1077.666 Q1163.0469,1077.5566 1163.2656,1077.5566 Q1163.6406,1077.5566 1163.875,1077.8223 Q1164.1094,1078.0723 1164.1094,1078.6816 L1164.1094,1080.1348 Q1164.1094,1080.7441 1163.875,1081.0098 Q1163.6406,1081.2754 1163.2656,1081.2754 Q1162.9219,1081.2754 1162.7188,1081.0723 Q1162.5156,1080.8848 1162.4063,1080.3691 Q1162.3594,1080.0098 1162.1719,1079.8223 Q1161.8438,1079.4473 1161.2344,1079.2285 Q1160.625,1079.0098 1160,1079.0098 Q1159.2344,1079.0098 1158.5938,1079.3379 Q1157.9688,1079.666 1157.4688,1080.416 Q1156.9844,1081.166 1156.9844,1082.1973 L1156.9844,1083.291 Q1156.9844,1084.5254 1157.875,1085.3535 Q1158.7656,1086.166 1160.3594,1086.166 Q1161.2969,1086.166 1161.9531,1085.916 Q1162.3438,1085.7598 1162.7656,1085.3223 Q1163.0313,1085.0566 1163.1719,1084.9785 Q1163.3281,1084.9004 1163.5313,1084.9004 Q1163.8594,1084.9004 1164.1094,1085.166 Q1164.375,1085.416 1164.375,1085.7598 Q1164.375,1086.1035 1164.0313,1086.5098 Q1163.5313,1087.0879 1162.7344,1087.416 Q1161.6563,1087.8691 1160.3594,1087.8691 Q1158.8438,1087.8691 1157.6406,1087.2441 Q1156.6563,1086.7441 1155.9688,1085.6816 Q1155.2813,1084.6035 1155.2813,1083.3223 L1155.2813,1082.166 Q1155.2813,1080.8379 1155.8906,1079.6973 Q1156.5156,1078.541 1157.6094,1077.9316 Q1158.7031,1077.3066 1159.9375,1077.3066 Q1160.6719,1077.3066 1161.3125,1077.4785 Q1161.9688,1077.6348 1162.5156,1077.9941 Z " fill="#000000"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="139" x="1177.25" y="1087.687">WeightedEdgeClass</text><rect fill="#FFFFFF" height="16.584" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" width="10" x="1430.5" y="1065.1191"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="8" x="1431.5" y="1078.1836">E</text><line style="stroke:#000000;stroke-width:1.0;" x1="1041.5" x2="1436.5" y1="1096.1191" y2="1096.1191"/><line style="stroke:#000000;stroke-width:1.0;" x1="1041.5" x2="1436.5" y1="1104.1191" y2="1104.1191"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="385" x="1046.5" y="1122.1943">+WeightedEdgeClass(origin : E, target : E, weight : T)</text><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="224" x="1046.5" y="1139.209">+equals(obj : Object) : boolean</text></g><!--MD5=[6f3b921d933aaffb27f97d57a5236e17]
+reverse link Edge to WeightedEdge--><g id="link_Edge_WeightedEdge"><path codeLine="170" d="M1253,403.8691 C1253,462.4791 1253,550.5391 1253,596.2291 " fill="none" id="Edge-backto-WeightedEdge" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="1246,403.7391,1253,383.7391,1260,403.7391,1246,403.7391" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[5aac40ee0e3ed4e4425a077514ec8e60]
+reverse link WeightedEdge to AbstractWeightedEdge--><g id="link_WeightedEdge_AbstractWeightedEdge"><path codeLine="171" d="M1250.73,677.7791 C1248.2,732.9491 1244.14,821.7891 1241.52,879.0591 " fill="none" id="WeightedEdge-backto-AbstractWeightedEdge" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1243.74,677.3991,1251.64,657.7391,1257.72,678.0391,1243.74,677.3991" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[338e251574940c0f7e75b0b3ebafc8fa]
+reverse link Edge to AbstractEdge--><g id="link_Edge_AbstractEdge"><path codeLine="172" d="M1308.94,397.5791 C1356.3,441.5591 1424.68,505.0791 1477.34,553.9891 " fill="none" id="Edge-backto-AbstractEdge" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1303.93,402.4791,1294.04,383.7391,1313.46,392.2191,1303.93,402.4791" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[8dbb5dff78928d610e3c924769d0e457]
+reverse link AbstractEdge to EdgeClass--><g id="link_AbstractEdge_EdgeClass"><path codeLine="173" d="M1571.21,719.9991 C1581.61,778.8991 1594.55,852.2391 1602.28,896.0091 " fill="none" id="AbstractEdge-backto-EdgeClass" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="1564.31,721.1591,1567.73,700.2491,1578.1,718.7291,1564.31,721.1591" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[4ff9d8aca4aa950b16d87229482fc06d]
+reverse link AbstractWeightedEdge to WeightedEdgeClass--><g id="link_AbstractWeightedEdge_WeightedEdgeClass"><path codeLine="174" d="M1239,1011.3491 C1239,1030.9891 1239,1051.3391 1239,1068.1191 " fill="none" id="AbstractWeightedEdge-backto-WeightedEdgeClass" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="1232,1011.3091,1239,991.3091,1246,1011.3091,1232,1011.3091" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[c0fd4fa7531b48e915b89d85e7c504bb]
+reverse link Graph to WeightedGraph--><g id="link_Graph_WeightedGraph"><path codeLine="176" d="M1399.08,217.4691 C1466.89,243.8791 1542.47,273.3091 1603.56,297.0991 " fill="none" id="Graph-backto-WeightedGraph" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="1396.28,223.8891,1380.18,210.1091,1401.36,210.8491,1396.28,223.8891" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[db968f9fc6ac9268ae9f4e46aa5ce152]
+reverse link Graph to UnweightedGraph--><g id="link_Graph_UnweightedGraph"><path codeLine="177" d="M1067.32,248.2691 C1036.04,268.6491 1004.98,288.8891 979.57,305.4491 " fill="none" id="Graph-backto-UnweightedGraph" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="1063.59,242.3391,1084.17,237.2891,1071.23,254.0691,1063.59,242.3391" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[876b48ad0bf167cebb2f9ea13589c960]
+reverse link WeightedGraph to AbstractWeightedGraph--><g id="link_WeightedGraph_AbstractWeightedGraph"><path codeLine="178" d="M1786.3,406.2191 C1800.91,420.2091 1817.17,435.7791 1834.11,451.9891 " fill="none" id="WeightedGraph-backto-AbstractWeightedGraph" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="1781.32,411.1391,1771.71,392.2491,1791,401.0291,1781.32,411.1391" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[eafd48c26d64bc7a596be83e3c2d3d2f]
+reverse link UnweightedGraph to AbstractUnweightedGraph--><g id="link_UnweightedGraph_AbstractUnweightedGraph"><path codeLine="179" d="M904.81,403.1091 C899.32,422.6091 892.89,445.4391 886.28,468.9091 " fill="none" id="UnweightedGraph-backto-AbstractUnweightedGraph" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="none" points="898.1,401.0891,910.26,383.7391,911.58,404.8891,898.1,401.0891" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[955ca49e4217d3ffb8285e31f15dbae8]
+reverse link AbstractUnweightedGraph to UnweightedDirectedGraph--><g id="link_AbstractUnweightedGraph_UnweightedDirectedGraph"><path codeLine="180" d="M594.58,757.3191 C519.69,796.4291 440.73,837.6591 377.91,870.4591 " fill="none" id="AbstractUnweightedGraph-backto-UnweightedDirectedGraph" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="591.53,751.0091,612.5,747.9591,598.01,763.4191,591.53,751.0091" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[cd758d36949ee6b20283bc011cb954d5]
+reverse link AbstractUnweightedGraph to UnweightedUndirectedGraph--><g id="link_AbstractUnweightedGraph_UnweightedUndirectedGraph"><path codeLine="181" d="M792.99,804.5591 C786.46,828.0491 780.15,850.7891 774.68,870.4891 " fill="none" id="AbstractUnweightedGraph-backto-UnweightedUndirectedGraph" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="786.28,802.5491,798.38,785.1491,799.77,806.2991,786.28,802.5491" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[c333202f15dc5d316d934a9d9c9c7bc1]
+reverse link AbstractWeightedGraph to WeightedDirectedGraph--><g id="link_AbstractWeightedGraph_WeightedDirectedGraph"><path codeLine="182" d="M2024.9,822.5591 C2025.52,836.3091 2026.13,849.5691 2026.69,861.8691 " fill="none" id="AbstractWeightedGraph-backto-WeightedDirectedGraph" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="2017.88,822.4291,2023.96,802.1291,2031.87,821.7891,2017.88,822.4291" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[a1c2ab2a143f8e132116b1f8ea69528c]
+reverse link AbstractWeightedGraph to WeightedUndirectedGraph--><g id="link_AbstractWeightedGraph_WeightedUndirectedGraph"><path codeLine="183" d="M2296.9,776.0591 C2353.76,806.0091 2411.11,836.2091 2460.22,862.0791 " fill="none" id="AbstractWeightedGraph-backto-WeightedUndirectedGraph" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="none" points="2293.31,782.0891,2278.88,766.5691,2299.83,769.6991,2293.31,782.0891" style="stroke:#000000;stroke-width:1.0;"/></g><!--MD5=[cea18d2d9bcd5ebb0b46c7223511bdbb]
+reverse link Edge to AbstractUnweightedGraph--><g id="link_Edge_AbstractUnweightedGraph"><path codeLine="185" d="M1192.77,386.7291 C1159.8,409.2291 1116.62,438.6891 1071.89,469.2291 " fill="none" id="Edge-backto-AbstractUnweightedGraph" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1197.14,383.7391,1187.4476,385.4877,1193.004,386.5487,1191.943,392.1052,1197.14,383.7391" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="26" x="1159.7351" y="404.5942">1..n</text></g><!--MD5=[fb26f12ccd73514e58e9ee747c0ebaac]
+reverse link WeightedEdge to AbstractWeightedGraph--><g id="link_WeightedEdge_AbstractWeightedGraph"><path codeLine="186" d="M1269.13,591.9991 C1293.67,543.3091 1345.51,457.3491 1419.5,422.1191 C1474.08,396.1391 1633.44,405.3191 1691.5,422.1191 C1717.58,429.6691 1743.59,440.0091 1768.87,452.0591 " fill="none" id="WeightedEdge-backto-AbstractWeightedGraph" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="1266.83,596.5891,1274.4246,590.3184,1269.0603,592.1141,1267.2646,586.7499,1266.83,596.5891" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="26" x="1241.0219" y="585.9553">1..n</text></g><!--MD5=[9c6a66062b62d1998f1956865edc787a]
+@startuml graph
+
+!theme plain
+skinparam classAttributeIconSize 0
+
+package de.luca.baeck.java.graph {
+
+    interface Graph<E> {
+
+        + {abstract} add(vertex: E) : boolean
+        + {abstract} contains(vertex : E) : boolean
+        + {abstract} remove(vertex : E) : boolean
+        + {abstract} size() : int 
+        + {abstract} isEmpty() : boolean
+        + {abstract} subgraph(vertices : List<E>) : Graph<E>
+        + {abstract} isConnected() : boolean
+        + {abstract} isCyclic() : boolean 
+
+    }
+
+    interface UnweightedGraph<E> {
+
+        + {abstract} connect(origin : E, target : E)
+        + {abstract} remove(origin : E, target : E) : boolean
+
+    }
+
+    interface WeightedGraph<E,T> {
+
+        + {abstract} connect(origin : E, target : E, weight : T)
+        + {abstract} getPaths(origin : E) : Map<E, List<E>>
+        + {abstract} getPath(origin : E, target : E) : List<E>
+
+    }
+
+    abstract AbstractWeightedGraph<E,T> {
+
+        # edges : Map<E, Set<WeightedEdge<E,T>>>
+        - visited : Map<E, Boolean>
+        - beingVisited : Map<E, Boolean>
+
+        # AbstractWeightedGraph()
+        # AbstractWeightedGraph(edges : Map<E, Set<WeightedEdge<E,T>>>)
+        - link(origin : E, target : E, weight : T)
+        + add(vertex: E) : boolean
+        + contains(vertex : E) : boolean
+        # removeEdge(origin : E, target : E, weight : T) : boolean
+        + remove(vertex : E) : boolean
+        + size() : int 
+        + isEmpty() : boolean
+        + isConnected() : boolean
+        + isCyclic() : boolean 
+        - isCyclic(origin : E, previous : E) : boolean
+        + getPath(origin : E, target : E) : List<E>
+        + getPaths(origin : E) : Map<E, List<E>>
+        + toString() : String
+    
+    }
+
+    abstract AbstractUnweightedGraph<E> {
+        # edges : Map<E, Set<Edge<E>>>
+        - visited : Map<E, Boolean>
+        - beingVisited : Map<E, Boolean>
+
+        # AbstractUnweightedGraph()
+        # AbstractUnweightedGraph(edges : Map<E, Set<Edge<E>>>)
+        - link(origin : E, target : E)
+        + add(vertex: E) : boolean
+        + contains(vertex : E) : boolean
+        # removeEdge(origin : E, target : E) : boolean
+        + remove(vertex : E) : boolean
+        + size() : int 
+        + isEmpty() : boolean
+        + isConnected() : boolean
+        + isCyclic() : boolean 
+        - isCyclic(origin : E, previous : E) : boolean
+        + toString() : String
+    }
+
+    class UnweightedDirectedGraph<E> {
+
+        + UnweightedDirectedGraph()
+        + UnweightedDirectedGraph(edges : Map<E, Set<Edge<E>>>)
+        + connect(origin : E, target : E)
+        + remove(origin : E, target : E) : boolean
+        + subgraph(vertices : List<E>) : Graph<E>
+
+    }
+
+    class WeightedDirectedGraph<E,T> {
+
+        + WeightedDirectedGraph()
+        + WeightedDirectedGraph(edges : Map<E, Set<WeightedEdge<E,T>>>)
+        + connect(origin : E, target : E, weight : T)
+        + remove(origin : E, target : E, weight :T) : boolean
+        + subgraph(vertices : List<E>) : Graph<E>
+        + minimalSpanningTree() : WeightedGraph<E,T>
+
+    }
+
+    class UnweightedUndirectedGraph<E> {
+
+        + UnweightedUndirectedGraph()
+        + UnweightedUndirectedGraph(edges : Map<E, Set<Edge<E>>>)
+        + connect(origin : E, target : E)
+        + remove(origin : E, target : E) : boolean
+        + subgraph(vertices : List<E>) : Graph<E>
+
+    }
+
+    class WeightedUndirectedGraph<E,T> {
+
+        + WeightedUndirectedGraph()
+        + WeightedUndirectedGraph(edges : Map<E, Set<WeightedEdge<E,T>>>)
+        + connect(origin : E, target : E, weight : T)
+        + remove(origin : E, target : E, weight :T) : boolean
+        + subgraph(vertices : List<E>) : Graph<E>
+        + minimalSpanningTree() : WeightedGraph<E,T>
+        
+    }
+
+    interface Edge<E> {
+
+        + {abstract} getOrigin() : E
+        + {abstract} getTarget() : E
+
+    }
+
+    interface WeightedEdge<E,T> {
+
+        + {abstract} getWeight() : T
+        
+    }
+
+    abstract AbstractEdge<E> {
+
+        # origin : E
+        # target : E
+
+        # AbstractEdge(origin : E, target : E)
+        + getOrigin() : E
+        + getTarget() : E
+        + toString() : String
+
+    }
+
+    abstract AbstractWeightedEdge<E,T> {
+        
+        # weight : T
+
+        # AbstractWeightedEdge(origin : E, target : E, weight : T)
+        + getWeight() : T
+        + toString() : String
+
+    }
+
+    class EdgeClass<E> {
+
+        + EdgeClass(origin : E, target : E)
+        + equals(obj : Object) : boolean
+
+    }
+
+    class WeightedEdgeClass<E> {
+
+        + WeightedEdgeClass(origin : E, target : E, weight : T)
+        + equals(obj : Object) : boolean
+
+    }
+
+    Edge <|- - WeightedEdge
+    WeightedEdge <|.. AbstractWeightedEdge
+    Edge <|.. AbstractEdge
+    AbstractEdge <|- - EdgeClass
+    AbstractWeightedEdge <|- - WeightedEdgeClass
+
+    Graph <|- - WeightedGraph
+    Graph <|- - UnweightedGraph
+    WeightedGraph <|.. AbstractWeightedGraph
+    UnweightedGraph <|.. AbstractUnweightedGraph
+    AbstractUnweightedGraph <|- - UnweightedDirectedGraph
+    AbstractUnweightedGraph <|- - UnweightedUndirectedGraph
+    AbstractWeightedGraph <|- - WeightedDirectedGraph
+    AbstractWeightedGraph <|- - WeightedUndirectedGraph
+    
+    Edge "1..n"  <- AbstractUnweightedGraph
+    WeightedEdge "1..n"  <- AbstractWeightedGraph
+}
+
+@enduml
+
+@startuml graph
+
+
+
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor white
+    FontColor black
+    FontName Verdana
+    HyperLinkColor blue
+    LineColor black
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor black
+skinparam BackgroundColor white
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor black
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor white
+  BarColor black
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor black
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor black
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor white
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor black
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor black
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor black
+  FontName Verdana
+}
+skinparam Header {
+  FontColor black
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color blue
+}
+skinparam IconPackage {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPrivate {
+  Color black
+  BackgroundColor white
+}
+skinparam IconProtected {
+  Color black
+  BackgroundColor white
+}
+skinparam IconPublic {
+  Color black
+  BackgroundColor white
+}
+skinparam Note {
+  FontColor black
+  FontName Verdana
+}
+skinparam Object {
+  BorderColor black
+}
+skinparam Package {
+  BorderColor black
+  FontColor black
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeA {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeC {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeE {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeI {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam StereotypeN {
+  BackgroundColor white
+  BorderColor black
+}
+skinparam UseCaseStereoType {
+  FontColor black
+  FontName Verdana
+}
+skinparam classAttributeIconSize 0
+
+package de.luca.baeck.java.graph {
+
+    interface Graph<E> {
+
+        + {abstract} add(vertex: E) : boolean
+        + {abstract} contains(vertex : E) : boolean
+        + {abstract} remove(vertex : E) : boolean
+        + {abstract} size() : int 
+        + {abstract} isEmpty() : boolean
+        + {abstract} subgraph(vertices : List<E>) : Graph<E>
+        + {abstract} isConnected() : boolean
+        + {abstract} isCyclic() : boolean 
+
+    }
+
+    interface UnweightedGraph<E> {
+
+        + {abstract} connect(origin : E, target : E)
+        + {abstract} remove(origin : E, target : E) : boolean
+
+    }
+
+    interface WeightedGraph<E,T> {
+
+        + {abstract} connect(origin : E, target : E, weight : T)
+        + {abstract} getPaths(origin : E) : Map<E, List<E>>
+        + {abstract} getPath(origin : E, target : E) : List<E>
+
+    }
+
+    abstract AbstractWeightedGraph<E,T> {
+
+        # edges : Map<E, Set<WeightedEdge<E,T>>>
+        - visited : Map<E, Boolean>
+        - beingVisited : Map<E, Boolean>
+
+        # AbstractWeightedGraph()
+        # AbstractWeightedGraph(edges : Map<E, Set<WeightedEdge<E,T>>>)
+        - link(origin : E, target : E, weight : T)
+        + add(vertex: E) : boolean
+        + contains(vertex : E) : boolean
+        # removeEdge(origin : E, target : E, weight : T) : boolean
+        + remove(vertex : E) : boolean
+        + size() : int 
+        + isEmpty() : boolean
+        + isConnected() : boolean
+        + isCyclic() : boolean 
+        - isCyclic(origin : E, previous : E) : boolean
+        + getPath(origin : E, target : E) : List<E>
+        + getPaths(origin : E) : Map<E, List<E>>
+        + toString() : String
+    
+    }
+
+    abstract AbstractUnweightedGraph<E> {
+        # edges : Map<E, Set<Edge<E>>>
+        - visited : Map<E, Boolean>
+        - beingVisited : Map<E, Boolean>
+
+        # AbstractUnweightedGraph()
+        # AbstractUnweightedGraph(edges : Map<E, Set<Edge<E>>>)
+        - link(origin : E, target : E)
+        + add(vertex: E) : boolean
+        + contains(vertex : E) : boolean
+        # removeEdge(origin : E, target : E) : boolean
+        + remove(vertex : E) : boolean
+        + size() : int 
+        + isEmpty() : boolean
+        + isConnected() : boolean
+        + isCyclic() : boolean 
+        - isCyclic(origin : E, previous : E) : boolean
+        + toString() : String
+    }
+
+    class UnweightedDirectedGraph<E> {
+
+        + UnweightedDirectedGraph()
+        + UnweightedDirectedGraph(edges : Map<E, Set<Edge<E>>>)
+        + connect(origin : E, target : E)
+        + remove(origin : E, target : E) : boolean
+        + subgraph(vertices : List<E>) : Graph<E>
+
+    }
+
+    class WeightedDirectedGraph<E,T> {
+
+        + WeightedDirectedGraph()
+        + WeightedDirectedGraph(edges : Map<E, Set<WeightedEdge<E,T>>>)
+        + connect(origin : E, target : E, weight : T)
+        + remove(origin : E, target : E, weight :T) : boolean
+        + subgraph(vertices : List<E>) : Graph<E>
+        + minimalSpanningTree() : WeightedGraph<E,T>
+
+    }
+
+    class UnweightedUndirectedGraph<E> {
+
+        + UnweightedUndirectedGraph()
+        + UnweightedUndirectedGraph(edges : Map<E, Set<Edge<E>>>)
+        + connect(origin : E, target : E)
+        + remove(origin : E, target : E) : boolean
+        + subgraph(vertices : List<E>) : Graph<E>
+
+    }
+
+    class WeightedUndirectedGraph<E,T> {
+
+        + WeightedUndirectedGraph()
+        + WeightedUndirectedGraph(edges : Map<E, Set<WeightedEdge<E,T>>>)
+        + connect(origin : E, target : E, weight : T)
+        + remove(origin : E, target : E, weight :T) : boolean
+        + subgraph(vertices : List<E>) : Graph<E>
+        + minimalSpanningTree() : WeightedGraph<E,T>
+        
+    }
+
+    interface Edge<E> {
+
+        + {abstract} getOrigin() : E
+        + {abstract} getTarget() : E
+
+    }
+
+    interface WeightedEdge<E,T> {
+
+        + {abstract} getWeight() : T
+        
+    }
+
+    abstract AbstractEdge<E> {
+
+        # origin : E
+        # target : E
+
+        # AbstractEdge(origin : E, target : E)
+        + getOrigin() : E
+        + getTarget() : E
+        + toString() : String
+
+    }
+
+    abstract AbstractWeightedEdge<E,T> {
+        
+        # weight : T
+
+        # AbstractWeightedEdge(origin : E, target : E, weight : T)
+        + getWeight() : T
+        + toString() : String
+
+    }
+
+    class EdgeClass<E> {
+
+        + EdgeClass(origin : E, target : E)
+        + equals(obj : Object) : boolean
+
+    }
+
+    class WeightedEdgeClass<E> {
+
+        + WeightedEdgeClass(origin : E, target : E, weight : T)
+        + equals(obj : Object) : boolean
+
+    }
+
+    Edge <|- - WeightedEdge
+    WeightedEdge <|.. AbstractWeightedEdge
+    Edge <|.. AbstractEdge
+    AbstractEdge <|- - EdgeClass
+    AbstractWeightedEdge <|- - WeightedEdgeClass
+
+    Graph <|- - WeightedGraph
+    Graph <|- - UnweightedGraph
+    WeightedGraph <|.. AbstractWeightedGraph
+    UnweightedGraph <|.. AbstractUnweightedGraph
+    AbstractUnweightedGraph <|- - UnweightedDirectedGraph
+    AbstractUnweightedGraph <|- - UnweightedUndirectedGraph
+    AbstractWeightedGraph <|- - WeightedDirectedGraph
+    AbstractWeightedGraph <|- - WeightedUndirectedGraph
+    
+    Edge "1..n"  <- AbstractUnweightedGraph
+    WeightedEdge "1..n"  <- AbstractWeightedGraph
+}
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: de
+Country: DE
+--></g></svg>

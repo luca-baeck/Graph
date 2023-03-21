@@ -1,0 +1,190 @@
+@startuml graph
+
+!theme plain
+skinparam classAttributeIconSize 0
+
+package de.luca.baeck.java.graph {
+
+    interface Graph<E> {
+
+        + {abstract} add(vertex: E) : boolean
+        + {abstract} contains(vertex : E) : boolean
+        + {abstract} remove(vertex : E) : boolean
+        + {abstract} size() : int 
+        + {abstract} isEmpty() : boolean
+        + {abstract} subgraph(vertices : List<E>) : Graph<E>
+        + {abstract} isConnected() : boolean
+        + {abstract} isCyclic() : boolean 
+
+    }
+
+    interface UnweightedGraph<E> {
+
+        + {abstract} connect(origin : E, target : E)
+        + {abstract} remove(origin : E, target : E) : boolean
+
+    }
+
+    interface WeightedGraph<E,T> {
+
+        + {abstract} connect(origin : E, target : E, weight : T)
+        + {abstract} getPaths(origin : E) : Map<E, List<E>>
+        + {abstract} getPath(origin : E, target : E) : List<E>
+
+    }
+
+    abstract AbstractWeightedGraph<E,T> {
+
+        # edges : Map<E, Set<WeightedEdge<E,T>>>
+        - visited : Map<E, Boolean>
+        - beingVisited : Map<E, Boolean>
+
+        # AbstractWeightedGraph()
+        # AbstractWeightedGraph(edges : Map<E, Set<WeightedEdge<E,T>>>)
+        - link(origin : E, target : E, weight : T)
+        + add(vertex: E) : boolean
+        + contains(vertex : E) : boolean
+        # removeEdge(origin : E, target : E, weight : T) : boolean
+        + remove(vertex : E) : boolean
+        + size() : int 
+        + isEmpty() : boolean
+        + isConnected() : boolean
+        + isCyclic() : boolean 
+        - isCyclic(origin : E, previous : E) : boolean
+        + getPath(origin : E, target : E) : List<E>
+        + getPaths(origin : E) : Map<E, List<E>>
+        + toString() : String
+    
+    }
+
+    abstract AbstractUnweightedGraph<E> {
+        # edges : Map<E, Set<Edge<E>>>
+        - visited : Map<E, Boolean>
+        - beingVisited : Map<E, Boolean>
+
+        # AbstractUnweightedGraph()
+        # AbstractUnweightedGraph(edges : Map<E, Set<Edge<E>>>)
+        - link(origin : E, target : E)
+        + add(vertex: E) : boolean
+        + contains(vertex : E) : boolean
+        # removeEdge(origin : E, target : E) : boolean
+        + remove(vertex : E) : boolean
+        + size() : int 
+        + isEmpty() : boolean
+        + isConnected() : boolean
+        + isCyclic() : boolean 
+        - isCyclic(origin : E, previous : E) : boolean
+        + toString() : String
+    }
+
+    class UnweightedDirectedGraph<E> {
+
+        + UnweightedDirectedGraph()
+        + UnweightedDirectedGraph(edges : Map<E, Set<Edge<E>>>)
+        + connect(origin : E, target : E)
+        + remove(origin : E, target : E) : boolean
+        + subgraph(vertices : List<E>) : Graph<E>
+
+    }
+
+    class WeightedDirectedGraph<E,T> {
+
+        + WeightedDirectedGraph()
+        + WeightedDirectedGraph(edges : Map<E, Set<WeightedEdge<E,T>>>)
+        + connect(origin : E, target : E, weight : T)
+        + remove(origin : E, target : E, weight :T) : boolean
+        + subgraph(vertices : List<E>) : Graph<E>
+        + minimalSpanningTree() : WeightedGraph<E,T>
+
+    }
+
+    class UnweightedUndirectedGraph<E> {
+
+        + UnweightedUndirectedGraph()
+        + UnweightedUndirectedGraph(edges : Map<E, Set<Edge<E>>>)
+        + connect(origin : E, target : E)
+        + remove(origin : E, target : E) : boolean
+        + subgraph(vertices : List<E>) : Graph<E>
+
+    }
+
+    class WeightedUndirectedGraph<E,T> {
+
+        + WeightedUndirectedGraph()
+        + WeightedUndirectedGraph(edges : Map<E, Set<WeightedEdge<E,T>>>)
+        + connect(origin : E, target : E, weight : T)
+        + remove(origin : E, target : E, weight :T) : boolean
+        + subgraph(vertices : List<E>) : Graph<E>
+        + minimalSpanningTree() : WeightedGraph<E,T>
+        
+    }
+
+    interface Edge<E> {
+
+        + {abstract} getOrigin() : E
+        + {abstract} getTarget() : E
+
+    }
+
+    interface WeightedEdge<E,T> {
+
+        + {abstract} getWeight() : T
+        
+    }
+
+    abstract AbstractEdge<E> {
+
+        # origin : E
+        # target : E
+
+        # AbstractEdge(origin : E, target : E)
+        + getOrigin() : E
+        + getTarget() : E
+        + toString() : String
+
+    }
+
+    abstract AbstractWeightedEdge<E,T> {
+        
+        # weight : T
+
+        # AbstractWeightedEdge(origin : E, target : E, weight : T)
+        + getWeight() : T
+        + toString() : String
+
+    }
+
+    class EdgeClass<E> {
+
+        + EdgeClass(origin : E, target : E)
+        + equals(obj : Object) : boolean
+
+    }
+
+    class WeightedEdgeClass<E> {
+
+        + WeightedEdgeClass(origin : E, target : E, weight : T)
+        + equals(obj : Object) : boolean
+
+    }
+
+    Edge <|-- WeightedEdge
+    WeightedEdge <|.. AbstractWeightedEdge
+    Edge <|.. AbstractEdge
+    AbstractEdge <|-- EdgeClass
+    AbstractWeightedEdge <|-- WeightedEdgeClass
+
+    Graph <|-- WeightedGraph
+    Graph <|-- UnweightedGraph
+    WeightedGraph <|.. AbstractWeightedGraph
+    UnweightedGraph <|.. AbstractUnweightedGraph
+    AbstractUnweightedGraph <|-- UnweightedDirectedGraph
+    AbstractUnweightedGraph <|-- UnweightedUndirectedGraph
+    AbstractWeightedGraph <|-- WeightedDirectedGraph
+    AbstractWeightedGraph <|-- WeightedUndirectedGraph
+    
+    Edge "1..n"  <- AbstractUnweightedGraph
+    WeightedEdge "1..n"  <- AbstractWeightedGraph
+}
+
+@enduml
