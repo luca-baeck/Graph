@@ -1,2 +1,2 @@
-##Graph
+# Graph
 <img src="graph.svg">
